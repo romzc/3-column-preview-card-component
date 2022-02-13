@@ -37,6 +37,6 @@ Users should be able to:
 
 ## Author
 
-- Github - [romcz](https://www.your-site.com)
-- Frontend Mentor - [Rony](https://www.frontendmentor.
+- Github - [romcz](https://github.com/romzc)
+- Frontend Mentor - [Rony](https://www.frontendmentor.io/profile/romzc)
 
