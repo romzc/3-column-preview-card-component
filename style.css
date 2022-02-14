@@ -22,8 +22,10 @@ body {
 
     width: 100%;
     height: 100vh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+ 
     
 }
 
@@ -31,19 +33,20 @@ main {
     display: grid;
     font-size: 15px;
     grid-template-columns: repeat(3,18rem);
+    
 }
 
-main div:nth-child(1) {
+main > div:nth-child(1) {
     background-color: var(--bright-orange);
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
 }
 
-main div:nth-child(2) {
+main > div:nth-child(2) {
     background-color: var(--dark-cyan);
 }
 
-main div:nth-child(3) {
+main > div:nth-child(3) {
     background-color: var(--very-dark-cyan);
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
@@ -51,12 +54,13 @@ main div:nth-child(3) {
 
 .container {
     padding: 2.4rem;
+    align-self: center;
     
 }
 
 
 
-h2 {
+h1 {
     font-family: 'Big Shoulders Display', cursive;
     color: var(--very-light-gray);
     
@@ -117,6 +121,7 @@ footer {
 @media (max-width: 900px) {
     main {
         grid-template-columns: repeat(3, auto);
+        margin: 1rem;
     }
 }
 
@@ -127,7 +132,7 @@ footer {
         margin: 1.5rem;
     }
 
-    main div:nth-child(1) {
+    main > div:nth-child(1) {
         background-color: var(--bright-orange);
         border-radius: 0;
         border-top-left-radius: 0.5rem;
@@ -135,11 +140,11 @@ footer {
         
     }
     
-    main div:nth-child(2) {
+    main > div:nth-child(2) {
         background-color: var(--dark-cyan);
     }
     
-    main div:nth-child(3) {
+    main > div:nth-child(3) {
         background-color: var(--very-dark-cyan);
         border-radius: 0;
         border-bottom-left-radius: 0.5rem;
